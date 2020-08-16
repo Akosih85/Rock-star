@@ -1,0 +1,56 @@
+.values {
+  color: #222427;
+}
+
+.values__container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+
+  &:before {
+    content: url('~images/decor/guitar.png');
+    position: absolute;
+    left: -40%;
+    top: -50%;
+  }
+}
+
+.values__title {
+  flex: .4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20%;
+}
+
+.values__title-text {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.values__content {
+  font-weight: 600;
+  color: rgba(16, 0, 34, .5);
+}
+
+.values__widget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+}
+
+.skills-row__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.skills-row__list {
+  display: flex;
+  justify-content: space-between;
+}
