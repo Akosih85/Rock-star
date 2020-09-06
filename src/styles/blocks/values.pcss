@@ -15,6 +15,10 @@
     justify-content: flex-start;
   }
 
+  @include phones {
+    height: 185vh;
+  }
+
   @include phones-x {
     height: 160vh;
   }
@@ -45,12 +49,8 @@
     }
 
     @include phones {
-      top: 87%;
-      left: 9%;
-    }
-
-    @include phones-x {
       top: 84%;
+      left: 9%;
     }
   }
 }
