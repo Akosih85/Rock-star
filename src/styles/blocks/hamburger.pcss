@@ -1,0 +1,28 @@
+.hamburger__menu-link {
+  display: none;
+
+  @include tablets {
+    display: flex;
+    padding-top: .6%;
+  }
+}
+
+.hamburger__icon {
+  width: 34px;
+  height: 28px;
+  fill: $text-color;
+
+  @include phones {
+    width: 40px;
+    height: 35px;
+  }
+
+  @include phones-x {
+    width: 46px;
+    height: 38px;
+  }
+
+  &:hover {
+    fill: #ff9a00;
+  }
+}

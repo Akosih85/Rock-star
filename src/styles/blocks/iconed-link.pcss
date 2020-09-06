@@ -1,0 +1,43 @@
+.iconed-link {
+  color: $links-color;
+  font-size: 18px;
+  font-weight: 700;
+
+  @include tablets {
+    font-size: 16px;
+  }
+
+  @include phones {
+    font-size: 18px;
+  }
+
+  @include phones-x {
+    font-size: 22px;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.iconed-link__icon {
+  width: 18px;
+  height: 18px;
+  fill: $links-color;
+  margin-right: 4%;
+
+  @include tablets {
+    margin-right: 2.1%;
+  }
+
+  @include phones {
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+  }
+
+  @include phones-x {
+    width: 28px;
+    height: 28px;
+  }
+}

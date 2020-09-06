@@ -2,5 +2,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 40px;
+  padding-bottom: 2.5%;
+
+  @include tablets {
+    align-items: flex-start;
+    margin-bottom: 10%;
+  }
+
+  @include phones {
+    justify-content: space-between;
+    margin-bottom: 22.5%;
+  }
+
+  @include phones-x {
+    justify-content: space-between;
+    margin-bottom: 40%;
+  }
+}
+
+.header__menu {  
+  @include tablets {
+    display: none;
+  }
 }

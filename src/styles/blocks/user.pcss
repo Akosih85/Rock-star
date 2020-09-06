@@ -6,7 +6,23 @@
 }
 
 .user__avatar {
-  margin-bottom: 59px;
+  margin: 4% 10% 17% 2%;
+
+  @include desktop {
+    margin: 3% 23% 13% 0;
+  }
+
+  @include tablets {
+    margin: 0 32% 2% 0;
+  }
+
+  @include phones {
+    margin: 0 0 9%;
+  }
+
+  @include phones-x {
+    margin: 0 0 13%;
+  }
 }
 
 .user__avatar-style {
@@ -15,17 +31,59 @@
   border: transparent;
   border-radius: 50%;
   overflow: hidden;
+
+  @include tablets {
+    width: 226px;
+    height: 226px;
+  }
+
+  @include phones-x {
+    width: 270px;
+    height: 270px;
+  }
 }
 
 .user__data {
   width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  @include phones {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .user__data-row {
   font-weight: 600;
+  line-height: 1.1;
+
+  @include desktop {
+    line-height: 1.2;
+  }
+
+  @include tablets {
+    line-height: 0.95;
+  }
+
+  @include phones-x {
+    line-height: 1.2;
+  }
 
   & td {
-    padding-top: 20px;
+    padding-top: 4.5%;
+
+    @include phones {
+    padding-right: 25%;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    @include phones-x {
+      padding-right: 23%;
+    }
   }
 }
 

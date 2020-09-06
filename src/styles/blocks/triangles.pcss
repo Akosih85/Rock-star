@@ -11,10 +11,18 @@
   height: 100%;
 
   &_position_left {
-    width: 80%;
+    width: 78%;
+
+    @include desktop {
+      width: 81.5%;
+    }
   }
 
   &_position_right {
-    width: 20%;
+    width: 22%;
+
+    @include desktop {
+      width: 18.5%;
+    }
   }
 }

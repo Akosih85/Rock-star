@@ -1,5 +1,9 @@
 .reviews {
-  background: url('~images/decor/guitar-man.jpg') center center / cover no-repeat;
+  background: url('~images/decor/guitar-man.jpg') center top / cover no-repeat, #100022;
+
+  @include tablets {
+    background-position: left 60% top;
+  }
 }
 
 .reviews__container {
@@ -7,105 +11,17 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
 
-.slider__header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 80px;
-}
-
-.slider__btns {
-  margin-left: 116px;
-}
-
-.round__btn {
-  width: 53px;
-  height: 53px;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  margin-right: 28px;
-
-  &:last-child {
-    margin-right: 0;
+  @include desktop {
+    width: 90.7%;
   }
 
-  &:hover {
-    opacity: .5;
+  @include tablets {
+    width: 90%;
   }
-}
 
-.round__btn_pointer_left {
-  transform: rotateY(180deg);
-}
-
-.round__btn-icon {
-  width: 17px;
-  height: 17px;
-  fill: #fff;
-}
-
-.slider__content {
-  display: flex;
-  justify-content: space-between;
-  padding-right: 18%;
-}
-
-.slider__item {
-  width: 50%;
-  margin-right: 20px;
-  display: flex;
-  flex-direction: column;
-
-  &:last-child {
-    margin-right: 0;
+  @include phones {
+    width: 85%;
+    height: 100vh;
   }
-}
-
-.quote {
-  position: relative;
-
-  &:before {
-    content: '';
-    display: flex;
-    width: 77px;
-    height: 58px;
-    background: svg-load('quote.svg', fill = #fff, width = 77px, height = 58px) center center no-repeat;
-    opacity: .05;
-    position: absolute;
-    top: 0;
-    left: -13%;
-  }
-}
-
-.quote__text {
-  font-weight: 600;
-  opacity: .5;
-  padding-right: 27%;
-  margin-bottom: 31px;
-}
-
-.user-display {
-  display: flex;
-  align-items: center;
-}
-
-.user-display__avatar {
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-right: 30px;
-}
-
-.user-display__name {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 12px;
-}
-
-.user-display__occ {
-  font-weight: 600;
-  opacity: .25;
 }

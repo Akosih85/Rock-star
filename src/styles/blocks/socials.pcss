@@ -1,9 +1,36 @@
 .socials {
   display: flex;
+
+  @include tablets {
+    margin-right: 11%;
+    margin-left: auto;
+  }
+
+  @include phones {
+    width: 24%;
+    justify-content: center;
+    margin: 0;
+  }
+
+  @include phones-x {
+    display: none;
+  }
 }
 
 .socials__item {
-  margin-right: 30px;
+  margin-right: 43px;
+
+  @include desktop {
+    margin-right: 42px;
+  }
+
+  @include tablets {
+    margin-right: 44px;
+  }
+
+  @include phones {
+    margin-right: 40%;
+  }
 
   &:last-child {
     margin-right: 0;
@@ -14,6 +41,16 @@
   width: 25px;
   height: 25px;
   fill: rgba($text-color, .3);
+
+  @include tablets {
+    width: 32px;
+    height: 32px;
+  }
+
+  @include phones {
+    width: 38px;
+    height: 38px;
+  }
 
   &:hover {
     fill: #ff9a00;

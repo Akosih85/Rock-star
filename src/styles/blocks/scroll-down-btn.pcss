@@ -4,13 +4,17 @@
   font-size: 18px;
   background: transparent;
 
+  @include desktop {
+    padding-bottom: 16.3%;
+  }
+
   &:after {
     content: "";
     display: inline-flex;
     background: svg-load('arrow-down.svg', fill=$text-color, width=13px, height=13px) center center no-repeat;
     width: 13px;
     height: 13px;
-    margin-left: 20px;
+    margin-left: 15px;
   }
 
   &:hover {
@@ -20,5 +24,4 @@
       background: svg-load('arrow-down.svg', fill=#ff9a00, width=13px, height=13px) center center no-repeat;
     }
   }
-
 }

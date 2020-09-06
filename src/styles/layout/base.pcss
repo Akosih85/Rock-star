@@ -1,11 +1,18 @@
 html {
   @include desktop {
-    font-size: 15px;
+    font-size: 16px;
   }
   @include tablets {
     font-size: 14px;
   }
+  @include phones {
+    font-size: 12px;
+  }
+  @include phones-x {
+    font-size: 10px;
+  }
 }
+
 body,
 html {
   height: 100%;
@@ -31,8 +38,20 @@ body {
   margin: 0 auto;
   width: 92.5%;
 
+  @include desktop {
+    width: 90.7%;
+  }
+
+  @include tablets {
+    width: 91.9%;
+  }
+
   @include phones {
     width: 85%;
+  }
+
+  @include phones-x {
+    width: 86%;
   }
 }
 
@@ -44,6 +63,7 @@ body {
 button {
   border: 0;
   cursor: pointer;
+  padding: 0;
 }
 
 * {

@@ -4,7 +4,15 @@
 }
 
 .menu__item {
-  margin-right: 20px;
+  margin-right: 5%;
+
+  @include desktop {
+    margin: 0 2.5%;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
 
   &:last-child {
     margin-right: 0;

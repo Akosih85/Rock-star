@@ -6,151 +6,33 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 82%;
+  padding: 0 5%;
   height: 100vh;
-}
 
-.works__title {
-  margin-bottom: 83px;
-}
+  @include desktop {
+    padding: 0;
+  }
 
-.works-preview {
-  display: flex;
-  justify-content: space-between;
-}
-
-.works-preview__pictures {
-  height: 100%;
-  width: 64%;
-  position: relative;
-  z-index: 1;
-
-  &:before {
-    content: attr(data-slide);
-    color: #e6e6e6;
-    position: absolute;
-    top: 2%;
-    line-height: 1;
-    font-size: 400px;
-    right: 0;
-    font-weight: 800;
-    transform: translateX(75%);
-    z-index: -1;
+  @include phones {
+    width: 100%;
   }
 }
 
-.works-preview__thumbs {
-  width: 80%;
-  position: absolute;
-  right: 0;
-  top: 75%;
-}
+.section__title.works__title {
+  margin-bottom: 5.7%;
 
-.thumbs {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.thumbs__item {
-  height: 100px;
-
-  &:hover {
-    outline: 3px solid #dc9322;
-    z-index: 1;
+  @include tablets {
+    margin-bottom: 7%;
   }
-}
 
-.works-preview__btns {
-  width: 5%;
-  height: 19%;
-  position: absolute;
-  top: 75%;
-  right: -5%;
-}
-
-.square-btns {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  background: #333c49;
-}
-
-.square-btns__icon {
-  width: 17px;
-  height: 17px;
-  fill: #717883;
-}
-
-.square-btns__item {
-  height: 50%;
-  padding: 0;
-
-  &:hover .square-btns__icon {
-    fill: #fff;
+  @include phones {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 5%;
   }
-}
 
-.square-btns__item_prev .square-btns__icon {
-  transform: rotate(180deg);
-}
-
-.active .square-btns__icon {
-  fill: #fff;
-}
-
-.works-preview__info {
-  width: 23%;
-  z-index: 1;
-}
-
-.tags {
-  display: flex;
-  margin-bottom: 35px;
-}
-
-.tags__item {
-  margin-right: 8px;
-
-  &:last-child {
-    margin-right: 0;
+  @include phones-x {
+    font-size: 38px;
+    margin-bottom: 8%;
   }
-}
-
-.tag {
-  font-size: 15px;
-  font-weight: 600;
-  opacity: 0.5;
-  padding: 14px 22px;
-  background: #f3f6f9;
-  border-radius: 40px;
-}
-
-.works-preview__title {
-  font-size: 30px;
-  font-weight: 700;
-  margin-bottom: 35px;
-}
-
-.works-preview__desc {
-  font-weight: 600;
-  opacity: .7;
-  margin-bottom: 46px;
-  padding-right: 55px;
-}
-
-.iconed-link {
-  color: $links-color;
-  font-size: 18px;
-  font-weight: 700;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-.iconed-link__icon {
-  width: 22px;
-  height: 22px;
-  fill: $links-color;
-  margin-right: 16px;
 }

@@ -1,0 +1,178 @@
+.works-preview {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  @include tablets {
+    flex-direction: column;
+  }
+}
+
+.works-preview__pictures {
+  width: 65.7%;
+  position: relative;
+  align-self: flex-start;
+  z-index: 1;
+
+  @include desktop {
+    width: 59.4%;
+  }
+
+  @include tablets {
+    width: 92%;
+    margin-bottom: 8%;
+  }
+
+  @include phones {
+    width: 100%;
+    margin-bottom: 13%;
+  }
+
+  @include phones-x {
+    margin-bottom: 10%;
+  }
+
+  &:before {
+    content: attr(data-slide);
+    color: #e6e6e6;
+    position: absolute;
+    top: 6%;
+    line-height: 1;
+    font-size: 400px;
+    right: 0;
+    font-weight: 800;
+    transform: translateX(75%);
+    z-index: -1;
+
+    @include desktop {
+      font-size: 300px;
+      top: 13%;
+    }
+
+    @include tablets {
+      font-size: 340px;
+      top: 26%;
+      right: 2%;
+    }
+
+    @include phones {
+      display: none;
+    }
+  }
+}
+
+.works-preview__img {
+  max-height: 112%;
+}
+
+.works-preview__thumbs {
+  width: 73.2%;
+  position: absolute;
+  right: 0;
+  top: 71%;
+
+  @include desktop {
+    width: 73.6%;
+  }
+
+  @include phones {
+    display: none;
+  }
+}
+
+.works-preview__btns {
+  width: 5.5%;
+  height: 19%;
+  position: absolute;
+  top: 70.6%;
+  left: 100%;
+
+  @include phones {
+    width: 12%;
+    height: 42.4%;
+    top: 57.6%;
+    left: 88%;
+  }
+
+  @include phones-x {
+    width: 15%;
+    height: 60%;
+    top: 40%;
+    left: 85%;
+  }
+}
+
+.works-preview__info {
+  width: 23.7%;
+  z-index: 1;
+
+  @include desktop {
+    width: 28.7%;
+  }
+
+  @include tablets {
+    width: 100%;
+    text-align: center;
+  }
+
+  @include phones {
+    padding: 0 10%;
+    text-align: left;
+  }
+
+  @include phones-x {
+    padding: 0 5%;
+  }
+}
+
+.works-preview__title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 9.5%;
+
+  @include tablets {
+    font-size: 34px;
+    margin-bottom: 1.5%;
+  }
+
+  @include phones {
+    font-size: 32px;
+    margin-bottom: 2.55%;
+  }
+
+  @include phones-x {
+    font-size: 38px;
+    margin-bottom: 3%;
+  }
+}
+
+.works-preview__desc {
+  font-weight: 600;
+  line-height: 1.9;
+  opacity: .7;
+  margin-bottom: 13%;
+  padding-right: 6%;
+
+  @include desktop {
+    padding-right: 0;
+  }
+
+  @include tablets {
+    font-size: 16px;
+    line-height: 1.75;
+    margin-bottom: 4.2%;
+    padding: 0 19%;
+  }
+
+  @include phones {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 9%;
+    padding: 0;
+  }
+
+  @include phones-x {
+    font-size: 22px;
+    margin-bottom: 6%;
+  }
+}

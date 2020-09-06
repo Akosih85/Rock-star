@@ -2,31 +2,134 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  padding: 0 19%;
+
+  @include desktop {
+    padding: 0;
+  }
+
+  @include phones {
+    height: 120vh;
+    flex-direction: column;
+    padding: 10% 0;
+  }
+
+  @include phones-x {
+    height: 150vh;
+    padding-top: 16%;
+  }
 }
 
 .about__user {
-  width: 30%;
+  width: 39.5%;
+
+  @include desktop {
+    width: 42.3%;
+  }
+
+  @include phones {
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 12.5%;
+  }
+
+  @include phones-x {
+    font-size: 22px;
+    margin-bottom: 18%;
+  }
 }
 
 .about__content {
   font-weight: 600;
+  line-height: 1.9;
   flex: 1;
+  padding-left: 5%;
+
+  @include desktop {
+    padding-left: .5%;
+  }
+
+  @include tablets {
+    line-height: 1.75;
+    padding-left: 3.6%;
+  }
+
+  @include phones {
+    font-size: 18px;
+    line-height: 1.42;
+    flex: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include phones-x {
+    font-size: 22px;
+    padding-left: 0;
+  }
 }
 
 .about__desc {
   opacity: .5;
-  margin-bottom: 21px;
+  margin-bottom: 1.5%;
+
+  @include tablets {
+    margin-bottom: 0;
+  }
+
+  @include phones-x {
+    margin-bottom: 2.2%;
+  }
 }
 
 .about__title {
   font-size: 36px;
   font-weight: 700;
-  margin-bottom: 31px;
+  margin-bottom: 3.7%;
+
+  @include desktop {
+    margin-bottom: 1.1%;
+  }
+
+  @include tablets {
+    margin-bottom: 7.6%;
+  }
+
+  @include phones {
+    font-size: 41px;
+    margin-bottom: 9.2%;
+  }
+
+  @include phones-x {
+    font-size: 44px;
+    line-height: 1.3;
+    margin-bottom: 15%;
+    padding-right: 15%;
+  }
 }
 
 .about__text-info {
   opacity: .5;
-  margin-bottom: 77px;
+  margin-bottom: 14.1%;
+
+  @include desktop {
+    margin-bottom: 14.8%;
+    padding-right: 13%;
+  }
+
+  @include tablets {
+    margin-bottom: 9%;
+    padding-right: 6%;
+  }
+
+  @include phones {
+    line-height: 1.75;
+    margin-bottom: 85px;
+    padding-right: 0;
+  }
+
+  @include phones-x {
+    margin-bottom: 23%;
+  }
 }
 
 .about__ps {
@@ -35,13 +138,40 @@
   opacity: .5;
   position: relative;
 
+  @include desktop {
+    padding-right: 5%;
+  }
+
+  @include tablets {
+    padding-right: 0;
+  }
+
+  @include phones {
+    line-height: 1.75;
+  }
+
   &:before {
     content: "*";
     font-style: italic;
     font-size: 48px;
     color: rgba(219, 2, 0, .3);
     position: absolute;
-    left: -5%;
-    top: -30%;
+    left: -11%;
+    top: -20%;
+
+    @include desktop {
+      left: -10%;
+    }
+
+    @include tablets {
+      font-size: 52px;
+      left: -12%;
+      top: -10%;
+    }
+
+    @include phones {
+      left: -9%;
+      top: -15%;
+    }
   }
 }

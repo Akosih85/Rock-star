@@ -3,6 +3,19 @@
   color: $text-color;
   font-size: 36px;
 
+  @include tablets {
+    font-size: 42px;
+    line-height: .7;
+  }
+
+  @include phones {
+    font-size: 48px;
+  }
+
+  @include phones-x {
+    font-size: 56px;
+  }
+
   &:hover {
     color: #ff9a00;
   }

@@ -1,22 +1,67 @@
 .userinfo {
   display: flex;
   justify-content: center;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .userinfo__title {
   font-weight: 600;
   font-size: 18px;
+  line-height: 1.6;
   color: rgba($text-color, .5);
   text-align: right;
-  margin-bottom: 20px;
-  margin-right: 56px;
-  padding-top: 12px;
+  margin-right: 3.5%;
+  padding-top: .3%;
+
+  @include desktop {
+    margin-right: 3.2%;
+  }
+
+  @include tablets {
+    margin-right: 0;
+    text-align: center;
+    line-height: 1.9;
+    font-size: 19px;
+    margin-bottom: 3.5%;
+  }
+
+  @include phones {
+    line-height: 1.42;
+    margin-bottom: 8px;
+  }
+
+  @include phones-x {
+    font-size: 22px;
+    margin-bottom: 3%;
+  }
 }
 
 .userinfo__name {
   color: $text-color;
   font-weight: 800;
   font-size: 72px;
-  line-height: 1;
-  flex-basis: 427px;
+  line-height: .85;
+  flex-basis: 25.6%;
+
+  @include tablets {
+    font-size: 52px;
+    line-height: 1.07;
+    text-align: center;
+    padding: 0 22%;
+  }
+
+  @include phones {
+    font-size: 48px;
+    line-height: 1.35;
+  }
+
+  @include phones-x {
+    font-size: 56px;
+    line-height: 1.35;
+    padding: 0;
+  }
 }

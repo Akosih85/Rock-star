@@ -1,0 +1,67 @@
+.user-display {
+  display: flex;
+  align-items: center;
+}
+
+.user-display__avatar {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  overflow: hidden;
+  margin-right: 9%;
+
+  @include desktop {
+    margin-right: 7%;
+  }
+
+  @include tablets {
+    width: 85px;
+    height: 85px;
+  }
+
+  @include phones {
+    width: 100px;
+    height: 100px;
+    margin-right: 13px;
+  }
+
+  @include phones-x {
+    width: 120px;
+    height: 120px;
+    margin-right: 17px;
+  }
+}
+
+.user-display__name {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 4% 0 3%;
+
+  @include desktop {
+    margin: 3% 0 2%;
+  }
+
+  @include tablets {
+    margin: 5% 0 4%;
+  }
+
+  @include phones {
+    font-size: 21px;
+    margin: 4px 0 0;
+  }
+
+  @include phones-x {
+    font-size: 25px;
+    margin: 0 0 3px;
+  }
+}
+
+.user-display__occ {
+  font-weight: 600;
+  opacity: .25;
+
+  @include phones {
+    font-size: 18px;
+  }
+}
